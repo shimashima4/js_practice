@@ -40,6 +40,16 @@
       });
 
       console.log(mapArray);
+
+      // 三項演算子
+      const answer = 0 < -1 ? "正解" : "不正解...";
+      console.log(answer);
+
+      // 三桁ごとにカンマを打ってくれる関数[toLocaleString()]
+      let number = 1200050;
+      const afterNumber =
+        typeof number === "number" ? number.toLocaleString() : "oh no...";
+      console.log(afterNumber);
     </script>
   </body>
 </html>
