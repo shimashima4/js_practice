@@ -30,6 +30,16 @@
       const hello2 = ["英語", "USA"];
       const [firstElement] = hello2;
       console.log(firstElement);
+
+      // 配列の複製
+      const copyHello = [...hello2];
+      console.log(copyHello);
+
+      const mapArray = copyHello.map((name) => {
+        return name + "Copy";
+      });
+
+      console.log(mapArray);
     </script>
   </body>
 </html>
