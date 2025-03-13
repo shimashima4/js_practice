@@ -14,9 +14,9 @@
         country: "USA",
       };
 
-      const { country, lang } = hello;
+      const { country, lang, place = "ニューヨーク" } = hello;
       console.log(country);
-      const text = `私の出身国は${country}です！母国語は${lang}だよ`;
+      const text = `私の出身国は${country}です！母国語は${lang}で、いまは${place}に住んでいます。`;
       console.log(text);
 
       //プロパティ名のままじゃいつか名前被っちゃうよ！って
