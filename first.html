@@ -10,7 +10,7 @@
     <script>
       // 分割代入
       const hello = {
-        lang: "english",
+        lang: "英語",
         country: "USA",
       };
 
@@ -19,7 +19,13 @@
       const text = `私の出身国は${country}です！母国語は${lang}だよ`;
       console.log(text);
 
-      //
+      //プロパティ名のままじゃいつか名前被っちゃうよ！って
+      // だから名前を新しくつける
+
+      const { country: firstCountry, lang: firstLang } = hello;
+      console.log(
+        `ハンバーガー大国${firstCountry}、${firstLang}で話しましょう`
+      );
     </script>
   </body>
 </html>
